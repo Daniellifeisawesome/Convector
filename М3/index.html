@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p><span class="bank">bank</span> <span class="a">a</span></p>
+        <p>BANK</p>
+        <p>business</p>
+        <p>INVESTMENTS</p>
+        <p>INSURANCE</p>
+        <p>MOBILE</p>
+        <p>TRAVEL</p>
+        <p>ENTERTAINMENT</p>
+        <p>LOG IN</p>
+    </header>
+    <h1>Online Currency Converter</h1>
+    <div class="inputs">
+        <div class="left-input">
+            <p class="money-text">I have</p>
+            <div class="currency">
+                <button>RUB</button>
+                <button>USD</button>
+                <button>EUR</button>
+                <button>GBP</button>
+            </div>
+            <form action="Converter">
+                <label for="you got">You got</label>
+                <input type="number" id="usd-amount" oninput="convert()">
+            </form>
+        </div>
+        <div class="right-input">
+            <p class="money-text">I want to get</p>
+            <div class="currency">
+                <button>RUB</button>
+                <button>USD</button>
+                <button>EUR</button>
+                <button>GBP</button>
+            </div>
+            <form action="Converter">
+                <label for="you receive">You receive</label>
+                <input type="number" name="money" id="resMoney" class="resMoney" oninput="convert()">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
